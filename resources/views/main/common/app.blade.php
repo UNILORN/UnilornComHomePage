@@ -11,10 +11,10 @@
     <title>@yield('title')</title>
 </head>
 <body>
-@include('./header')
+@include('main.common.header')
 
 @yield('content')
 
-@include('./footer')
+@include('main.common.footer')
 </body>
 </html>
