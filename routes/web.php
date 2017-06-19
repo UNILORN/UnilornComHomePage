@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/git/pulling',function (Request $request){
-    $pass = $request->get('pass');
+    $pass = $request->input('pass');
     if($pass == env('GIT_PASS')){
         exec('git pull origin master');
         return "Success!!!\n";
