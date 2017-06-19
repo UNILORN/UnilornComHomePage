@@ -18,8 +18,12 @@ Route::get('/', function () {
 Route::post('/git/pulling',function (\Illuminate\Http\Request $request){
     $pass = $request->input('pass');
     if($pass == sha1(env('GIT_PASS'))){
-        exec('/var/www/html/UnilornComHomePage/git pull origin master', $op, $rv);
-        return "Success!!!\n".$op." : ".$rv;
+        $res = exec('/var/www/html/UnilornComHomePage/git pull origin master', $op, $rv);
+        $text = "Success!!!\n".
+            $op."\n".
+            $rv."\n".
+            $res;
+        return $text;
     }
     return "Bad...\n ";
 });
