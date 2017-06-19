@@ -21,6 +21,8 @@ Route::post('/git/pulling',function (\Illuminate\Http\Request $request){
         exec('git pull origin master');
         return "Success!!!\n";
     }
+    echo $pass."\n";
+    echo "sha1=".sha1(env('GIT_PASS'));
     return "Bad...\n ";
 });
 
