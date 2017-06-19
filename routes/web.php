@@ -16,13 +16,11 @@ Route::get('/', function () {
 });
 
 Route::post('/git/pulling',function (\Illuminate\Http\Request $request){
-    $pass = $request->header('X-Hub-Signature');
-    if($pass == "sha1=".sha1(env('GIT_PASS'))){
+    $pass = $request->input('pass');
+    if($pass == sha1(env('GIT_PASS'))){
         exec('git pull origin master');
         return "Success!!!\n";
     }
-    echo $pass."\n";
-    echo "sha1=".sha1(env('GIT_PASS'));
     return "Bad...\n ";
 });
 
