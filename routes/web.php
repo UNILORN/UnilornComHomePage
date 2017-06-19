@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::post('/git/pulling',function (\Illuminate\Http\Request $request){
     $pass = $request->input('pass');
     if($pass == sha1(env('GIT_PASS'))){
-        $res = exec('/usr/bin/git pull origin master');
+        $res = exec('sh ~/homepage_shell.sh');
         $text = "Success!!!\n".
             $res;
         return $text;
