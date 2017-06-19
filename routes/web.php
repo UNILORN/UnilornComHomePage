@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::post('/git/pulling',function (\Illuminate\Http\Request $request){
     $pass = $request->input('pass');
     if($pass == sha1(env('GIT_PASS'))){
-        exec('git pull origin master');
+        exec('/var/www/html/UnilornComHomePage/git pull origin master');
         return "Success!!!\n";
     }
     return "Bad...\n ";
