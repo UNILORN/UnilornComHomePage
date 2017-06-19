@@ -5,3 +5,7 @@
 Homestead.json
 Homestead.yaml
 .env
+vpull.sh
+app/Service/
+public/css/admin/
+public/js/admin/
