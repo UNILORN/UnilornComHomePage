@@ -10,7 +10,9 @@
 @section('content')
 
 <main>
-    <center>Updating now</center>
+    <center>
+        <h1>Updating now</h1>
+    </center>
 </main>
 
 @endsection
