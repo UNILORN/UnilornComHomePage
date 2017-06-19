@@ -3,6 +3,7 @@
 @section('head')
     <script src="/js/main/top.js"></script>
     <link rel="stylesheet" href="/css/main/top.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 @endsection
 
 @section('title',config('column.SiteName'))
@@ -10,9 +11,20 @@
 @section('content')
 
 <main>
-    <center>
-        <h1>Updating now!!</h1>
-    </center>
+    <div class="mainContents top1">
+        <h1>unilorn.com</h1>
+    </div>
+    <div class="mainContents top2">
+        <h1>Welcome!!</h1>
+    </div>
+    <div class="mainContents top3">
+        <h1>Profile</h1>
+        <div class="container">
+            <div class="contents">
+
+            </div>
+        </div>
+    </div>
 </main>
 
 @endsection
