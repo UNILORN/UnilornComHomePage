@@ -18,7 +18,7 @@
         <h1>Welcome!!</h1>
     </div>
     <div class="mainContents top3">
-        <h1>Profile</h1>
+        <h1>Coming soon Profile ...</h1>
         <div class="container">
             <div class="contents">
 
