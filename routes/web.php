@@ -15,4 +15,11 @@ Route::get('/', function () {
     return view('main.top');
 });
 
+Route::get('/git/pulling',function (Request $request){
+    $pass = $request->get('pass');
+    if($pass == env('GIT_PASS')){
+        exec('git pull origin master');
+    }
+});
+
 Auth::routes();
