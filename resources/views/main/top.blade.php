@@ -11,7 +11,7 @@
 
 <main>
     <center>
-        <h1>Updating now</h1>
+        <h1>Updating now!!</h1>
     </center>
 </main>
 
