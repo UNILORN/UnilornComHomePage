@@ -21,7 +21,8 @@ Route::post('/git/pulling',function (\Illuminate\Http\Request $request){
         exec('git pull origin master');
         return "Success!!!\n";
     }
-    return "Bad...\n ".$pass." : ".$request->all();
+    var_dump($request->all());
+    return "Bad...\n ";
 });
 
 Auth::routes();
