@@ -16,12 +16,12 @@ Route::get('/', function () {
 });
 
 Route::post('/git/pulling',function (\Illuminate\Http\Request $request){
-    $pass = $request->input('secret');
+    $pass = $request->header('X-Hub-Signature');
     if($pass == env('GIT_PASS')){
         exec('git pull origin master');
         return "Success!!!\n";
     }
-    var_dump($request->all());
+    var_dump($request->header('X-Hub-Signature'));
     return "Bad...\n ";
 });
 
