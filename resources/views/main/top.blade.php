@@ -11,7 +11,7 @@
 @section('content')
 
 <main>
-    <div class="mainContents top1">
+    <div class="mainContents top1 sitetop">
         <h1>unilorn.com</h1>
     </div>
     <div class="mainContents top2">
