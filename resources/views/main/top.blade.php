@@ -2,7 +2,6 @@
 
 @section('head')
     <script src="/js/main/top.js"></script>
-    <link rel="stylesheet" href="/css/main/top.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 @endsection
 

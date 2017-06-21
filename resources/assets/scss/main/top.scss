@@ -4,15 +4,16 @@
     background-size: cover;
     background: no-repeat fixed center;
     position: relative;
-}
-.mainContents h1{
-    position: absolute;
-    font-family: 'Josefin Sans', sans-serif;
-    bottom:30px;
-    left: 30px;
-    color:#fff;
-    opacity: 0.7;
-    font-weight: bold;
+
+    h1{
+        position: absolute;
+        font-family: 'Josefin Sans', sans-serif;
+        bottom:30px;
+        left: 30px;
+        color:#fff;
+        opacity: 0.7;
+        font-weight: bold;
+    }
 }
 .sitetop {
     height: 100vh;

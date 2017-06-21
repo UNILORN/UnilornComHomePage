@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
     <script src="/js/main/common/app.js"></script>
-    <link rel="stylesheet" href="/css/main/common/app.css">
+    <link rel="stylesheet" href="/css/main.css">
     @yield('head')
     <title>@yield('title')</title>
 </head>

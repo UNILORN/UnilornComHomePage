@@ -7,5 +7,5 @@ Homestead.yaml
 .env
 vpull.sh
 app/Service/
-public/css/admin/
+resources/assets/scss/admin/
 public/js/admin/
