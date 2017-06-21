@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "prod": "gulp --production",
-    "dev": "gulp watch"
+    "dev": "gulp",
+    "build":"gulp sass"
   },
   "path": {
     "assetsDir": "./resources/assets/"
