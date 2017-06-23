@@ -67,7 +67,8 @@ body, html, a, p, h1, h2 {
   display: table-cell;
   vertical-align: middle;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  padding-bottom: 50px; }
   .profile .profileIcon {
     height: 30vh;
     max-height: 230px;
