@@ -44,7 +44,7 @@ body, html, a, p, h1, h2 {
   display: table-cell;
   vertical-align: middle;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+          box-sizing: border-box; }
   .profile .profileIcon {
     height: 30vh;
     max-height: 230px;
@@ -66,17 +66,15 @@ body, html, a, p, h1, h2 {
   .profile .profileDetail {
     padding-top: 15px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     text-align: center;
     height: 60px;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+        -ms-flex-pack: center;
+            justify-content: center; }
     .profile .profileDetailLink {
       border-radius: 50%;
       margin: 0 10px;
@@ -94,13 +92,13 @@ body, html, a, p, h1, h2 {
         .profile .profileDetailLink a:hover {
           opacity: 0.6;
           -webkit-transform: scale(1.5);
-          transform: scale(1.5); }
+                  transform: scale(1.5); }
       .profile .profileDetailLink i {
         color: #fff;
         width: 100%;
         height: 100%;
         -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+                box-sizing: border-box;
         padding: 10px;
         font-size: 20px; }
     .profile .profileDetail .icon-twitter {
