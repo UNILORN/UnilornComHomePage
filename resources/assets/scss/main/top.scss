@@ -3,12 +3,12 @@
 
 .mainContents {
   width: 100%;
-  height: 75vh;
   min-height: 315px;
-  background-size: cover;
   background: no-repeat fixed center;
+  background-size: cover;
   position: relative;
-
+  //box-shadow:0px 0px 20px;
+  //border-bottom:5px solid #fafafa;
   h1 {
     position: absolute;
     bottom: 30px;
@@ -18,16 +18,35 @@
     opacity: 0.7;
     font-weight: bold;
     font-size: 70px;
+    z-index: 1;
+  }
+  @include mobile(){
+    min-height: 180px;
+    h1{
+      font-size: 40px;
+    }
   }
 }
 
-.sitetop {
-  height: 100vh;
-}
-
+$height_cont:100vh,20vh,75vh,40vh;
+$mobile_height:80vh,10vh,65vh,10vh;
 @for $i from 1 through 3 {
   .top#{$i} {
     background-image: url('../../img/top#{$i}.jpg');
+    height: nth($height_cont,$i);
+    @include mobile(){
+      height: nth($mobile_height,$i);
+    }
+  }
+}
+.contentsFotter{
+  background-color: #37474f;
+  height: 40vh;
+  @include mobile(){
+    height: 10vh;
+  }
+  h1{
+    font-size: 20px;
   }
 }
 
@@ -49,6 +68,14 @@
       height: 30vh;
       max-height: 230px;
     }
+    @include mobile(){
+      height: 20vh;
+      max-height: 180px;
+      img{
+        height: 20vh;
+        max-height: 180px;
+      }
+    }
   }
   & &Head {
     padding-top: 15px;
@@ -57,9 +84,14 @@
     h2 {
       font-family: 'Josefin Sans', sans-serif;
       color: #fff;
-      opacity: 0.9;
       font-weight: bold;
       font-size: 50px;
+    }
+    @include mobile(){
+      height: 35px;
+      h2{
+        font-size: 35px;
+      }
     }
   }
   & &Detail {
@@ -75,13 +107,13 @@
       padding: 5px;
       width: 40px;
       height: 40px;
+      z-index: 10;
       a{
         transition: transform 200ms ease;
         display: block;
         width: 100%;
         height: 100%;
         &:hover{
-          opacity: 0.6;
           transform: scale(1.5);
         }
       }
