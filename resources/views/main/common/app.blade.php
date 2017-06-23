@@ -7,6 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">--}}
     {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>--}}
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
     <script src="/js/main/common/app.js"></script>
     <link rel="stylesheet" href="/css/main.css">
     @yield('head')
