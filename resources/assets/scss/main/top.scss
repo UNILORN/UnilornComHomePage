@@ -1,6 +1,8 @@
+@include container();
+
 .mainContents {
     width:100%;
-    height: 50vh;
+    height: 75vh;
     background-size: cover;
     background: no-repeat fixed center;
     position: relative;
@@ -13,25 +15,33 @@
         color:#fff;
         opacity: 0.7;
         font-weight: bold;
+        font-size: 70px;
     }
 }
 .sitetop {
     height: 100vh;
 }
-@media screen and (max-width:480px){
-
+@for $i from 1 through 2{
+    .top#{$i} {
+        background-image: url('../../img/top#{$i}.jpg');
+    }
 }
 
-.top1{
-    background-image: url('../../img/top1.jpg');
-}
-.top2{
-    background-image: url('../../img/top2.jpg');
-}
-.top3{
-    background-image: url('../../img/top3.jpg');
-}
+.profile {
 
-.container{
-    max-width: 1024px;
+  & &Icon{
+    display: inline-block;
+    width: 30%;
+    height: 30vh;
+    text-align: center;
+    img{
+      border-radius: 50%;
+      height: 30vh;
+    }
+  }
+  & &Head{
+    display: inline-block;
+    width: 70%;
+    height: 30vh;
+  }
 }

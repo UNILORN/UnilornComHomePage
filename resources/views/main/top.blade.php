@@ -19,8 +19,19 @@
     <div class="mainContents top3">
         <h1>Coming soon Profile ...</h1>
         <div class="container">
-            <div class="contents">
-
+            <div class="profile">
+                <div class="profileIcon">
+                    <img src="/img/profile.png" alt="プロフィール画像">
+                </div>
+                <div class="profileHead">
+                    <h2>unilorn</h2>
+                </div>
+                <div class="profileDetail">
+                    <div class="profileTwitter"></div>
+                    <div class="profileGithub"></div>
+                    <div class="profileNiconico"></div>
+                    <div class="profileInstagram"></div>
+                </div>
             </div>
         </div>
     </div>
