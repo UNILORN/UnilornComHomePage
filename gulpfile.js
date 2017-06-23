@@ -1,7 +1,7 @@
 var path = require('path');
 var fs = require('fs');
 var pkg = JSON.parse(fs.readFileSync('./package.json'));
-var assetsPath = path.resolve(pkg.path.assetsDir);
+var assetsPath = path.resolve("./resources/assets/");
 
 var gulp = require('gulp');
 
@@ -19,7 +19,7 @@ gulp.task('sass', function() {
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer())
-        .pipe(gulp.dest(path.join('./public/css')));
+        .pipe(gulp.dest(path.join(assetsPath,'./public/css')));
 });
 
 gulp.task('default', function() {
