@@ -45,8 +45,8 @@ $cont: (
                 img:1
         ),
         top4:(
-                pc:75vh,
-                sp:75vh,
+                pc:60vh,
+                sp:40vh,
                 img:0
         )
 );
@@ -206,11 +206,26 @@ $cont: (
       }
     }
     @include mobile() {
-      width: 100%;
-      height: map-get(map-get($cont,top4),sp) / 2;
+      width: 50%;
+      height: map-get(map-get($cont,top4),sp) / 3;
+      h2{
+        line-height: map-get(map-get($cont,top4),sp) / 3;
+        font-size: 25px;
+        &:hover{
+          font-size: 35px;
+        }
+      }
     }
     @include tablet() {
       width: 50%;
+      height: map-get(map-get($cont,top4),sp) / 2;
+      h2{
+        line-height: map-get(map-get($cont,top4),sp) / 2;
+        font-size: 40px;
+        &:hover{
+          font-size: 50px;
+        }
+      }
     }
   }
 }
