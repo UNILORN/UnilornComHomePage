@@ -59,8 +59,8 @@
                 </a>
             </div>
             <div class="itemListItem item-bg3">
-                <a href="#">
-                    <h2 style="font-size: 30px">Biography Comming soon...</h2>
+                <a href="http://qiita.com/UNILORN">
+                    <h2>Qiita</h2>
                 </a>
             </div>
             <div class="itemListItem item-bg4">
