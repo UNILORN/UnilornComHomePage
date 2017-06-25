@@ -14,7 +14,7 @@
     <title>@yield('title')</title>
 </head>
 <body>
-@include('main.common.header')
+@include('main.common.head')
 
 @yield('content')
 

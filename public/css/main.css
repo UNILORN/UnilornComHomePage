@@ -48,16 +48,13 @@ body, html, a, p, h1, h2 {
   height: 75vh; }
   @media screen and (max-width: 480px) {
     .top3 {
-      height: 65vh; } }
+      height: 75vh; } }
 
-.contentsFotter {
-  background-color: #37474f;
-  height: 40vh; }
+.top4 {
+  height: 75vh; }
   @media screen and (max-width: 480px) {
-    .contentsFotter {
-      height: 10vh; } }
-  .contentsFotter h1 {
-    font-size: 20px; }
+    .top4 {
+      height: 75vh; } }
 
 .profileWarp {
   display: table;
@@ -142,3 +139,12 @@ body, html, a, p, h1, h2 {
       background-color: #2f2f2f; }
     .profile .profileDetail .icon-qiita {
       background-color: #4cb10d; }
+
+.contentsFotter {
+  background-color: #37474f;
+  height: 40vh; }
+  @media screen and (max-width: 480px) {
+    .contentsFotter {
+      height: 10vh; } }
+  .contentsFotter h1 {
+    font-size: 20px; }
