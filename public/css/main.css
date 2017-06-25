@@ -307,6 +307,7 @@ body, html, a, p, h1, h2 {
         height: 13.33333vh; }
         .itemList .itemListItem h2 {
           line-height: 13.33333vh;
+          height: 13.33333vh;
           font-size: 25px; }
           .itemList .itemListItem h2:hover {
             font-size: 35px; } }
@@ -316,6 +317,7 @@ body, html, a, p, h1, h2 {
         height: 20vh; }
         .itemList .itemListItem h2 {
           line-height: 20vh;
+          height: 20vh;
           font-size: 40px; }
           .itemList .itemListItem h2:hover {
             font-size: 50px; } }
