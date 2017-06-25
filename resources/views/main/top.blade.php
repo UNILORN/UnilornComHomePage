@@ -49,24 +49,34 @@
     <div class="mainContents top4">
         <div class="itemList">
             <div class="itemListItem item-bg1">
-                <h2>Instagram</h2>
+                <a href="https://www.instagram.com/unilorn_com/">
+                    <h2>Instagram</h2>
+                </a>
             </div>
             <div class="itemListItem item-bg2">
-                <a href="#">
+                <a href="https://www.youtube.com/user/Yuutya1425">
                     <h2>YouTube</h2>
                 </a>
             </div>
             <div class="itemListItem item-bg3">
-                <h2 style="font-size: 30px">Biography Comming soon...</h2>
+                <a href="#">
+                    <h2 style="font-size: 30px">Biography Comming soon...</h2>
+                </a>
             </div>
             <div class="itemListItem item-bg4">
-                <h2>test</h2>
+                <a href="https://twitter.com/yuuiro_1552">
+                    <h2>Twitter</h2>
+                </a>
             </div>
             <div class="itemListItem item-bg5">
-                <h2>niconico</h2>
+                <a href="http://www.nicovideo.jp/user/6282195">
+                    <h2>niconico</h2>
+                </a>
             </div>
             <div class="itemListItem item-bg6">
-                <h2>test</h2>
+                <a href="https://github.com/UNILORN/">
+                    <h2>Github</h2>
+                </a>
             </div>
         </div>
     </div>
