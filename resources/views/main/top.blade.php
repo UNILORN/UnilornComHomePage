@@ -48,22 +48,24 @@
     </div>
     <div class="mainContents top4">
         <div class="itemList">
-            <div class="itemListItem" style="background-color: #2196F3">
+            <div class="itemListItem item-bg1">
+                <h2>Instagram</h2>
+            </div>
+            <div class="itemListItem item-bg2">
+                <a href="#">
+                    <h2>YouTube</h2>
+                </a>
+            </div>
+            <div class="itemListItem item-bg3">
+                <h2 style="font-size: 30px">Biography Comming soon...</h2>
+            </div>
+            <div class="itemListItem item-bg4">
                 <h2>test</h2>
             </div>
-            <div class="itemListItem" style="background-color: #FF5722">
-                <h2>test</h2>
+            <div class="itemListItem item-bg5">
+                <h2>niconico</h2>
             </div>
-            <div class="itemListItem" style="background-color: #9C27B0">
-                <h2>test</h2>
-            </div>
-            <div class="itemListItem" style="background-color: #00E676">
-                <h2>test</h2>
-            </div>
-            <div class="itemListItem" style="background-color: #757575">
-                <h2>test</h2>
-            </div>
-            <div class="itemListItem" style="background-color: #E91E63">
+            <div class="itemListItem item-bg6">
                 <h2>test</h2>
             </div>
         </div>
