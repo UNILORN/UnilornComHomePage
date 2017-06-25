@@ -47,8 +47,25 @@
         </div>
     </div>
     <div class="mainContents top4">
-        <div class="item">
-
+        <div class="itemList">
+            <div class="itemListItem" style="background-color: #2196F3">
+                <h2>test</h2>
+            </div>
+            <div class="itemListItem" style="background-color: #FF5722">
+                <h2>test</h2>
+            </div>
+            <div class="itemListItem" style="background-color: #9C27B0">
+                <h2>test</h2>
+            </div>
+            <div class="itemListItem" style="background-color: #00E676">
+                <h2>test</h2>
+            </div>
+            <div class="itemListItem" style="background-color: #757575">
+                <h2>test</h2>
+            </div>
+            <div class="itemListItem" style="background-color: #E91E63">
+                <h2>test</h2>
+            </div>
         </div>
     </div>
     <div class="mainContents contentsFotter">
