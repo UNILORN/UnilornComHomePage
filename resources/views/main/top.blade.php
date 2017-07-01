@@ -81,7 +81,7 @@
         </div>
     </div>
     <div class="mainContents top5">
-        <h1>Skill</h1>
+        <h1>comming soon ...Skill</h1>
         <div class="skill">
             
         </div>
