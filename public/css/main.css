@@ -354,7 +354,44 @@ body, html, a, p, h1, h2 {
     /* Safari */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    /* Safari */
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .skillWarp .skillContents:nth-child(4n+0) .skillContentsLineBottom {
+      background-color: #40C4FF; }
+    .skillWarp .skillContents:nth-child(4n+1) .skillContentsLineBottom {
+      background-color: #40C4FF; }
+    .skillWarp .skillContents:nth-child(4n+2) .skillContentsLineBottom {
+      background-color: #40C4FF; }
+    .skillWarp .skillContents:nth-child(4n+3) .skillContentsLineBottom {
+      background-color: #40C4FF; }
+    .skillWarp .skillContents {
+      width: 100%; }
+      .skillWarp .skillContentsLine {
+        height: 80%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 10px 0; }
+        .skillWarp .skillContentsLineBottom {
+          text-align: center;
+          width: 50px;
+          margin: auto; }
+          @media screen and (max-width: 480px) {
+            .skillWarp .skillContentsLineBottom {
+              width: 25px; } }
+      .skillWarp .skillContentsHead {
+        height: 20%;
+        text-align: center; }
+        .skillWarp .skillContentsHead h2 {
+          font-family: 'Josefin Sans', sans-serif;
+          color: #fff;
+          opacity: 0.7;
+          font-weight: bold;
+          font-size: 40px; }
+          @media screen and (max-width: 480px) {
+            .skillWarp .skillContentsHead h2 {
+              font-size: 20px; } }
 
 .contentsFotter {
   background-color: #37474f;

@@ -81,10 +81,20 @@
         </div>
     </div>
     <div class="mainContents top5">
-        <h1>comming soon ...Skill</h1>
+        <h1>Skill</h1>
         <div class="container skillWarp">
             <div class="skill">
-
+                @foreach( config("column.skill") as $key => $value)
+                    <div class="skillContents {{$key}}">
+                        <div class="skillContentsLine">
+                            <div class="skillContentsLineTop" style="height: {{100-$value}}%;"></div>
+                            <div class="skillContentsLineBottom" style="height: {{$value}}%;"></div>
+                        </div>
+                        <div class="skillContentsHead">
+                            <h2>{{$key}}</h2>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>

@@ -244,6 +244,13 @@ $cont: (
   }
 }
 
+$skillColor:(
+        #40C4FF,
+        #40C4FF,
+        #40C4FF,
+        #40C4FF
+);
+
 .skillWarp {
   height: 100%;
   .skill {
@@ -255,6 +262,45 @@ $cont: (
     display: flex;
     -webkit-justify-content: center; /* Safari */
     justify-content: center;
+    -webkit-flex-wrap: nowrap; /* Safari */
+    flex-wrap:         nowrap;
+    @for $i from 0 through length($skillColor)-1 {
+      &Contents:nth-child(#{length($skillColor)}n+#{$i}){
+        .skillContentsLineBottom{
+          background-color: nth($skillColor,($i+1));
+        }
+      }
+    }
+    &Contents{
+      width: 100%;
+      &Line{
+        height: 80%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        &Bottom{
+          text-align: center;
+          width:50px;
+          margin:auto;
+          @include mobile() {
+            width: 25px;
+          }
+        }
+      }
+      &Head{
+        height: 20%;
+        text-align: center;
+        h2{
+          font-family: 'Josefin Sans', sans-serif;
+          color: #fff;
+          opacity: 0.7;
+          font-weight: bold;
+          font-size: 40px;
+          @include mobile() {
+            font-size: 20px;
+          }
+        }
+      }
+    }
   }
 }
 
