@@ -50,6 +50,13 @@ body, html, a, p, h1, h2 {
     .top3 {
       height: 75vh; } }
 
+.top5 {
+  background-image: url("/img/top5.jpg");
+  height: 75vh; }
+  @media screen and (max-width: 480px) {
+    .top5 {
+      height: 75vh; } }
+
 .profileWarp {
   display: table;
   height: 100%; }
