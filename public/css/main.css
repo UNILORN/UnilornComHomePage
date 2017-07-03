@@ -31,28 +31,32 @@ body, html, a, p, h1, h2 {
 
 .top1 {
   background-image: url("/img/top1.jpg");
-  height: 100vh; }
+  height: 100vh;
+  min-height: 315px; }
   @media screen and (max-width: 480px) {
     .top1 {
       height: 80vh; } }
 
 .top2 {
   background-image: url("/img/top2.jpg");
-  height: 20vh; }
+  height: 20vh;
+  min-height: 315px; }
   @media screen and (max-width: 480px) {
     .top2 {
       height: 10vh; } }
 
 .top3 {
   background-image: url("/img/top3.jpg");
-  height: 75vh; }
+  height: 75vh;
+  min-height: 315px; }
   @media screen and (max-width: 480px) {
     .top3 {
       height: 75vh; } }
 
 .top5 {
   background-image: url("/img/top5.jpg");
-  height: 75vh; }
+  height: 75vh;
+  min-height: 315px; }
   @media screen and (max-width: 480px) {
     .top5 {
       height: 75vh; } }
@@ -100,6 +104,7 @@ body, html, a, p, h1, h2 {
     padding-top: 15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    /* Safari */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -280,6 +285,7 @@ body, html, a, p, h1, h2 {
     z-index: -1; }
 
 .itemList {
+  /* Safari */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,7 +296,8 @@ body, html, a, p, h1, h2 {
       flex-wrap: wrap; }
   .itemList .itemListItem {
     width: 33.33333332%;
-    height: 30vh; }
+    height: 30vh;
+    min-height: 157.5px; }
     .itemList .itemListItem a {
       display: block;
       text-decoration: none; }
@@ -303,6 +310,7 @@ body, html, a, p, h1, h2 {
       font-size: 50px;
       height: 30vh;
       line-height: 30vh;
+      min-height: 157.5px;
       -webkit-transition: all ease 300ms;
       transition: all ease 300ms; }
       .itemList .itemListItem h2:hover {
@@ -311,10 +319,12 @@ body, html, a, p, h1, h2 {
     @media screen and (max-width: 480px) {
       .itemList .itemListItem {
         width: 50%;
-        height: 13.33333vh; }
+        height: 13.33333vh;
+        min-height: 105px; }
         .itemList .itemListItem h2 {
           line-height: 13.33333vh;
           height: 13.33333vh;
+          min-height: 105px;
           font-size: 25px; }
           .itemList .itemListItem h2:hover {
             font-size: 35px; } }
@@ -328,6 +338,23 @@ body, html, a, p, h1, h2 {
           font-size: 40px; }
           .itemList .itemListItem h2:hover {
             font-size: 50px; } }
+
+.skillWarp {
+  height: 100%; }
+  .skillWarp .skill {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 110px;
+    /* Safari */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* Safari */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .contentsFotter {
   background-color: #37474f;

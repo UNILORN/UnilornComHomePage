@@ -82,8 +82,10 @@
     </div>
     <div class="mainContents top5">
         <h1>comming soon ...Skill</h1>
-        <div class="skill">
-            
+        <div class="container skillWarp">
+            <div class="skill">
+
+            </div>
         </div>
     </div>
     <div class="mainContents contentsFotter">

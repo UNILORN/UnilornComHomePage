@@ -61,6 +61,7 @@ $cont: (
     @if map-get($value,img) == 1 {
       background-image: url('/img/#{$image}.jpg');
       height: map-get($value, pc);
+      min-height: 315px;
       @include mobile() {
         height: map-get($value, sp);
       }
@@ -116,6 +117,7 @@ $cont: (
   & &Detail {
     padding-top: 15px;
     box-sizing: border-box;
+    display: -webkit-flex; /* Safari */
     display: flex;
     text-align: center;
     height: 60px;
@@ -185,12 +187,14 @@ $cont: (
 }
 
 .itemList {
+  display: -webkit-flex; /* Safari */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   & &Item {
     width: 33.33333332%;
     height: map-get(map-get($cont,top4),pc) / 2;
+    min-height: 157.5px;
     a {
       display: block;
       text-decoration: none;
@@ -204,6 +208,7 @@ $cont: (
       font-size: 50px;
       height: map-get(map-get($cont,top4),pc) / 2;
       line-height: map-get(map-get($cont,top4),pc) / 2;
+      min-height: 157.5px;
       transition: all ease 300ms;
       &:hover {
         background-color: #000000;
@@ -213,9 +218,11 @@ $cont: (
     @include mobile() {
       width: 50%;
       height: map-get(map-get($cont,top4),sp) / 3;
+      min-height: 105px;
       h2 {
         line-height: map-get(map-get($cont,top4),sp) / 3;
         height: map-get(map-get($cont,top4),sp) / 3;
+        min-height: 105px;
         font-size: 25px;
         &:hover {
           font-size: 35px;
@@ -234,6 +241,20 @@ $cont: (
         }
       }
     }
+  }
+}
+
+.skillWarp {
+  height: 100%;
+  .skill {
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 110px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-justify-content: center; /* Safari */
+    justify-content: center;
   }
 }
 
