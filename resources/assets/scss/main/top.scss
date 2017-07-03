@@ -245,10 +245,13 @@ $cont: (
 }
 
 $skillColor:(
-        #40C4FF,
-        #40C4FF,
-        #40C4FF,
-        #40C4FF
+        #FFFF00,
+        #E040FB,
+        #FF3D00,
+        #FFAB40,
+        #FF4081,
+        #5C6BC0,
+        #C6FF00,
 );
 
 .skillWarp {
@@ -264,10 +267,10 @@ $skillColor:(
     justify-content: center;
     -webkit-flex-wrap: nowrap; /* Safari */
     flex-wrap:         nowrap;
-    @for $i from 0 through length($skillColor)-1 {
+    @for $i from 1 through length($skillColor) {
       &Contents:nth-child(#{length($skillColor)}n+#{$i}){
         .skillContentsLineBottom{
-          background-color: nth($skillColor,($i+1));
+          background-color: nth($skillColor,($i));
         }
       }
     }

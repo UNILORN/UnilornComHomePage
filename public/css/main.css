@@ -358,14 +358,20 @@ body, html, a, p, h1, h2 {
     /* Safari */
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
-    .skillWarp .skillContents:nth-child(4n+0) .skillContentsLineBottom {
-      background-color: #40C4FF; }
-    .skillWarp .skillContents:nth-child(4n+1) .skillContentsLineBottom {
-      background-color: #40C4FF; }
-    .skillWarp .skillContents:nth-child(4n+2) .skillContentsLineBottom {
-      background-color: #40C4FF; }
-    .skillWarp .skillContents:nth-child(4n+3) .skillContentsLineBottom {
-      background-color: #40C4FF; }
+    .skillWarp .skillContents:nth-child(7n+1) .skillContentsLineBottom {
+      background-color: #FFFF00; }
+    .skillWarp .skillContents:nth-child(7n+2) .skillContentsLineBottom {
+      background-color: #E040FB; }
+    .skillWarp .skillContents:nth-child(7n+3) .skillContentsLineBottom {
+      background-color: #FF3D00; }
+    .skillWarp .skillContents:nth-child(7n+4) .skillContentsLineBottom {
+      background-color: #FFAB40; }
+    .skillWarp .skillContents:nth-child(7n+5) .skillContentsLineBottom {
+      background-color: #FF4081; }
+    .skillWarp .skillContents:nth-child(7n+6) .skillContentsLineBottom {
+      background-color: #5C6BC0; }
+    .skillWarp .skillContents:nth-child(7n+7) .skillContentsLineBottom {
+      background-color: #C6FF00; }
     .skillWarp .skillContents {
       width: 100%; }
       .skillWarp .skillContentsLine {
