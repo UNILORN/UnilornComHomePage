@@ -43,6 +43,11 @@
                         </a>
                     </div>
                 </div>
+                <div class="profileInternal">
+                    <p>Age : {{Carbon\Carbon::now()->year - 1996}} ♂</p>
+                    <p>Profession : Student</p>
+                    <p>Industry : Engineer [ Network Web ]</p>
+                </div>
             </div>
         </div>
     </div>
@@ -94,6 +99,26 @@
                             <h2>{{$key}}</h2>
                         </div>
                     </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+    <div class="mainContents top6">
+        <h1>Machine</h1>
+        <div class="container machineWarp">
+            <div class="machine">
+                @foreach( config("column.machine") as $title => $column)
+                <div class="machineItem">
+                    <h2 class="machineName">{{$title}}</h2>
+                    <table>
+                        @foreach($column as $name => $value)
+                            <tr>
+                                <td class="machineItemName">{{$name}}</td>
+                                <td class="machineItemDetail">{{$value}}</td>
+                            </tr>
+                        @endforeach
+                    </table>
+                </div>
                 @endforeach
             </div>
         </div>

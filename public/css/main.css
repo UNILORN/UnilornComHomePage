@@ -53,6 +53,9 @@ body, html, a, p, h1, h2 {
     .top3 {
       height: 75vh; } }
 
+.top4 {
+  background-color: #1f1f1f; }
+
 .top5 {
   background-image: url("/img/top5.jpg");
   height: 75vh;
@@ -60,6 +63,9 @@ body, html, a, p, h1, h2 {
   @media screen and (max-width: 480px) {
     .top5 {
       height: 75vh; } }
+
+.top6 {
+  background-color: #1f1f1f; }
 
 .profileWarp {
   display: table;
@@ -76,7 +82,7 @@ body, html, a, p, h1, h2 {
     max-height: 230px;
     text-align: center; }
     .profile .profileIcon img {
-      border-radius: 50%;
+      border-radius: 20%;
       height: 30vh;
       max-height: 230px; }
     @media screen and (max-width: 480px) {
@@ -145,6 +151,21 @@ body, html, a, p, h1, h2 {
       background-color: #2f2f2f; }
     .profile .profileDetail .icon-qiita {
       background-color: #4cb10d; }
+  .profile .profileInternal {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    text-align: center; }
+    @media screen and (max-width: 480px) {
+      .profile .profileInternal {
+        font-size: 20px; } }
+    .profile .profileInternal p {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 5px 0; }
 
 .item-bg1 {
   background-image: url("/img/item1.jpg");
@@ -418,6 +439,51 @@ body, html, a, p, h1, h2 {
           @media screen and (max-width: 480px) {
             .skillWarp .skillContentsHead h2 {
               font-size: 20px; } }
+
+.machineWarp {
+  height: 100%; }
+  .machineWarp .machine {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 110px;
+    /* Safari */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* Safari */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* Safari */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #222; }
+    .machineWarp .machineItem {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 20px 0;
+      width: 50%;
+      line-height: 30px;
+      text-align: center;
+      background-color: #dddddd;
+      border: #1f1f1f 10px solid; }
+      .machineWarp .machineItem table {
+        display: inline-table; }
+      @media (max-width: 768px) and (min-width: 481px) {
+        .machineWarp .machineItem {
+          width: 100%; } }
+      @media screen and (max-width: 480px) {
+        .machineWarp .machineItem {
+          width: 100%; } }
+    .machineWarp .machineName {
+      text-align: center;
+      padding-bottom: 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      font-size: 30px; }
 
 .contentsFotter {
   background-color: #37474f;
