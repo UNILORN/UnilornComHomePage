@@ -493,3 +493,8 @@ body, html, a, p, h1, h2 {
       height: 10vh; } }
   .contentsFotter h1 {
     font-size: 20px; }
+  .contentsFotter p {
+    color: #fafafa;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px; }
