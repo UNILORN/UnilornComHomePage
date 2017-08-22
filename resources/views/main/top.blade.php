@@ -125,6 +125,7 @@
     </div>
     <div class="mainContents contentsFotter">
         <h1>Copyright 2017 unilorn.com</h1>
+        <p>このサイトに使用されている画像は、UNILORN本人が撮影した写真です。</p>
     </div>
 </main>
 
