@@ -85,24 +85,26 @@
             </div>
         </div>
     </div>
-    <div class="mainContents top5">
-        <h1>Skill</h1>
-        <div class="container skillWarp">
-            <div class="skill">
-                @foreach( config("column.skill") as $key => $value)
-                    <div class="skillContents {{$key}}">
-                        <div class="skillContentsLine">
-                            <div class="skillContentsLineTop" style="height: {{100-$value}}%;"></div>
-                            <div class="skillContentsLineBottom" style="height: {{$value}}%;"></div>
-                        </div>
-                        <div class="skillContentsHead">
-                            <h2>{{$key}}</h2>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
+
+    {{--<div class="mainContents top5">--}}
+        {{--<h1>Skill</h1>--}}
+        {{--<div class="container skillWarp">--}}
+            {{--<div class="skill">--}}
+                {{--@foreach( config("column.skill") as $key => $value)--}}
+                    {{--<div class="skillContents {{$key}}">--}}
+                        {{--<div class="skillContentsLine">--}}
+                            {{--<div class="skillContentsLineTop" style="height: {{100-$value}}%;"></div>--}}
+                            {{--<div class="skillContentsLineBottom" style="height: {{$value}}%;"></div>--}}
+                        {{--</div>--}}
+                        {{--<div class="skillContentsHead">--}}
+                            {{--<h2>{{$key}}</h2>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--@endforeach--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
     <div class="mainContents top6">
         <h1>Machine</h1>
         <div class="container machineWarp">
@@ -121,6 +123,23 @@
                 </div>
                 @endforeach
             </div>
+        </div>
+    </div>
+
+    <div class="mainContents top7">
+        <h1>Product</h1>
+        <div class="itemList">
+            <div class="itemListItem product-bg1">
+                <a href="#">
+                    <h2>OIC-Book</h2>
+                </a>
+            </div>
+            <div class="itemListItem product-bg2">
+                <a href="http://unilorn.com/">
+                    <h2>unilorn.com</h2>
+                </a>
+            </div>
+
         </div>
     </div>
     <div class="mainContents contentsFotter">
