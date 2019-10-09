@@ -1,0 +1,27 @@
+version: "3"
+volumes:
+  doc:
+services:
+  nginx:
+    image: nginx:1.15.7-alpine
+    volumes:
+      - ./public:/var/www/public
+      - ./docker_config/nginx/conf.d:/etc/nginx/conf.d
+    ports:
+      - "8000:80"
+    links:
+      - app
+    depends_on:
+      - app
+  app:
+    build: .
+    volumes:
+      - .:/var/www
+  node:
+    image: node:12-alpine
+    volumes:
+      - .:/work
+    working_dir: /work
+    tty: true
+    #command: /bin/sh -c "npm i && npm run watch"
+
